@@ -28,7 +28,7 @@ public class Login extends javax.swing.JFrame {
 
     public Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/ImobiliariaErechim", "root", "admin");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/ImobiliariaErechim", "root", "admin");
         } catch (SQLException excecao) {
             throw new RuntimeException(excecao);
         }
